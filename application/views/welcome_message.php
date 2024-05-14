@@ -17,13 +17,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid bg-primary p-3">
+    <div class="container-fluid bg-info p-3">
         <div class="row">
             <div class="col-lg-1 text-center"></div>
             <div class="col-lg-10 pt-2 text-center">
                 <h3 class="text-uppercase text-light">Chat Application</h3>
             </div>
-            <div class="col-lg-1 text-center"><a href="login.php">
+            <div class="col-lg-1 text-center"><a href="login.php" style="text-decoration: none;">
                 <i class="fa fa-user fs-3"></i><br>
                 <span class="text-light">Login</span></a>
             </div>
@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row pt-5">
             <div class="col-lg-10 mx-auto">
                 <div class="card">
-                    <div class="card-header bg-primary text-center text-white pt-3">
+                    <div class="card-header bg-info text-center text-white pt-3">
                         <h5>Teshan Wijewardhana</h5>
                     </div>
                     <div class="card-body">
@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <form action="" method="post" enctype="multipart/form-data">
                                 <div class="form-group pb-3 d-flex">
                                     <input type="text" class="form-control pe-2" name="message" id="message" placeholder="Type message..."/>
-                                    <button type="submit" class="btn btn-primary ps-2 ms-2" name="submit" style="border-radius: 10%;"><i class="fa fa-paper-plane"></i></button>
+                                    <button type="submit" class="btn btn-info ps-2 ms-2" name="submit" style="border-radius: 10%;"><i class="fa fa-paper-plane"></i></button>
                                 </div>  
                             </form>
                         </div>
