@@ -1,4 +1,5 @@
 <?php 
+    defined('BASEPATH') OR exit('No direct script access allowed');
     session_start();
 
     include('Connect.php');
@@ -7,7 +8,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $query = "SELECT * FROM admins WHERE Email='$email' AND Password='$password'";
+        $query = "SELECT * FROM users WHERE Email='$email' AND Password='$password'";
 
         $result = mysqli_query($conn, $query);
 
@@ -41,12 +42,12 @@
         <div class="row pt-5">
             <div class="col-lg-8 mx-auto">
                 <div class="card">
-                    <div class="card-header bg-primary text-center text-white">
+                    <div class="card-header bg-success text-center text-white">
                         <h3>Sign In</h3>
                     </div>
                     <div class="card-body">
                     <h5 class="card-title text-center">Login To Your Account</h5>
-                        <form action="" method="post" enctype="multipart/form-data">
+                        <form action="/application/views/Dashboard.php" method="post" enctype="multipart/form-data">
                             <div class="form-group pb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="text" class="form-control" name="email" id="email" required/>
@@ -58,7 +59,8 @@
                             <?php if(isset($error)): ?>
                                 <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
                             <?php endif; ?>
-                            <button type="submit" class="btn btn-primary" name="submit" style="width: 100%;">Login</button>
+                            <button type="submit" class="btn btn-success text-white" name="submit" style="width: 100%; font-size:large;">Login</button>
+                            <h6 class="text-center">Don't have an account?<a href="<?php echo base_url(); ?>register" style="text-decoration:none;">Register</a></h6>
                         </form>
                     </div>
                 </div>

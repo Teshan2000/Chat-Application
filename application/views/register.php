@@ -10,7 +10,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $query = "INSERT INTO admins (Username, Email, Password) VALUES ('$username', '$email', '$password')";
+        $query = "INSERT INTO users (Username, Email, Password) VALUES ('$username', '$email', '$password')";
 
         $result = mysqli_query($conn, $query);
         header('location:login.php');
@@ -34,7 +34,7 @@
         <div class="row pt-5">
             <div class="col-lg-8 mx-auto">
                 <div class="card">
-                    <div class="card-header bg-info text-center text-white">
+                    <div class="card-header bg-success text-center text-white">
                         <h3>Sign Up</h3>
                     </div>
                     <div class="card-body">
@@ -52,7 +52,12 @@
                                 <label for="password" class="form-label">Password</label>
                                 <input type="password" class="form-control" name="password" id="password" required/>
                             </div>
-                            <button type="submit" class="btn btn-info" name="submit" style="width: 100%;">Register</button>
+                            <div class="form-group pb-3">
+                                <label for="password" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" name="password" id="password" required/>
+                            </div>
+                            <button type="submit" class="btn btn-success" name="submit" style="width: 100%;">Register</button>
+                            <h6 class="text-center">Already have an account?<a href="<?php echo base_url(); ?>/application/views/login.php" style="text-decoration:none;">Login</a></h6>
                         </form>
                     </div>
                 </div>
