@@ -23,8 +23,9 @@ ChitChat is a versatile and feature-rich web chat application developed using Co
 - **Back-end:** CodeIgnitor
 - **Database:** MySQL
 - **Authentication:** JWT (JSON Web Tokens) for secure user authentication
-- **Push Notifications:** [Your Push Notification Service]
 - **File Storage:** Localhost
+<!-- - **Push Notifications:** [Your Push Notification Service] -->
+
 
 ## Getting Started
 
@@ -32,13 +33,13 @@ To get started with ChitChat, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/chitchat-app.git
+   git clone https://github.com/Teshan2000/Web-Chat-Application.git
    ```
 
 2. **Set up Flutter App:**
    ```bash
    # Navigate to the Flutter app directory
-   cd chitchat-app/flutter_app
+   cd Web-Chat-Application/Chat-Application
    flutter pub get
    ```
 
@@ -67,8 +68,12 @@ To get started with ChitChat, follow these steps:
 
 ## Contribution Guidelines
 
-Contributions to ChitChat are welcome! If you'd like to contribute, please follow our [contribution guidelines](link_to_contributing_guidelines).
+Thank you for considering contributing to this project! Here’s how you can help:
+
+- **Reporting Issues:** If you find a bug, please create an issue describing the problem and steps to reproduce it.
+- **Feature Requests:** Feel free to suggest new features by opening an issue.
+- **Submitting Pull Requests:** If you would like to make a change, fork the repository, make your changes, and submit a pull request. Be sure to provide a clear description of what the change does.
 
 ## License
 
-ChitChat is open-source and available under the [MIT License](link_to_license).
+ChitChat is open-source and available under the [MIT License](./LICENSE).
